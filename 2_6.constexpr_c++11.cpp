@@ -124,11 +124,28 @@ int main()
 ////////////////////////////////
 void foo(const int s)
 {
-    int x[s]; //OK
+    int x[s]; //error
 }
 
 /*
 foo호출시 foo(3)과 같이 호출할수도 있지만
-foo(n)과 같이 호출할수도 있다.
+foo(n)과 같이 호출 할수도 있다.
 컴파일 시간에 s를 알 수 없다.
+런타임 상수가 된다.
+int x[s];부분이 없으면 컴파일 된다.
 */
+
+int main()
+{
+    int n = 10;
+
+    const int c1 = 10; //ok
+    const int c2 = n;  //ok
+    //c1은 배열의 크기로 들어갈 수 있으나 c2는 배열의 크기로 들어갈 수 없다.
+    //c1은 템플릿의 인자로 갈 수 있지만 c2는 템플릿의 인자로 갈 수 없다.
+
+    constexpr int c1 = 10; //ok(컴파일 최적화에도 좋다)
+    constexpr int c2 = n;  //error
+}
+
+//결론 : 컴파일 상수를 만들때는 constexpr쓰자.
