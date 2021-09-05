@@ -88,10 +88,9 @@ struct Point
 
 Point pt;
 
-Point &goo()
+Point &goo() //1. 참조형태로 리턴하는 것이다.
 {
     Point p;
-    //1
     //이건 지역 객체다
     //{}을 지나면 파괴 된다.
     return p;
