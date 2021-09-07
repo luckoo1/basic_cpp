@@ -40,6 +40,8 @@
         "xlocmon": "cpp",
         "xloctime": "cpp",
         "string": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "deque": "cpp",
+        "stack": "cpp"
     }
 }
