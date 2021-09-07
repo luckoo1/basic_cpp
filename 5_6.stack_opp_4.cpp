@@ -104,14 +104,8 @@ public:
         buf = new T[sz];
         idx = 0;
     }
-    ~Stack()
-    {
-        delete[] buf;
-    }
-    void push(T n)
-    {
-        buf[idx++] = n;
-    }
+    ~Stack() { delete[] buf; }
+    void push(T n) { buf[idx++] = n; }
     T pop();
 };
 
