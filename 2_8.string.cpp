@@ -1,7 +1,6 @@
 #if 0
 #include <iostream>
-#include <string.h> //<cstring>
-//cstring은 c의 헤더에서 가져온거다
+#include <string.h>
 
 int main()
 {
@@ -20,6 +19,7 @@ int main()
 
 #include <iostream>
 #include <string>
+//cstring은 c의 헤더에서 가져온거다
 
 int main()
 {

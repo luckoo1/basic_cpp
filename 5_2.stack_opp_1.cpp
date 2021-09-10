@@ -2,25 +2,20 @@
 
 #if 0
 //1번째 단계
-
 #include <iostream>
-
 
 int buf[10];
 int idx = 0;
-
 
 void push(int n)
 {
     buf[idx++] = n;
 }
 
-
 int pop()
 {
     return buf[--idx];
 }
-
 
 int main()
 {
@@ -31,8 +26,6 @@ int main()
 
     std::cout << pop() << std::endl;
 }
-
-
 /*
 전역변수를 사용해서 버퍼와 indxe관리
 문제점 : stack이 2개 이상 필요하면 어떻게 해야 할까?
@@ -40,7 +33,6 @@ buf를 2개 놓을까??
 push에서 pop을할때 버퍼의 포인터와 인덱스의 포인터도 받아야한다.
 까다롭다.
 */
-
 #endif
 
 #if 0
@@ -54,25 +46,21 @@ complex가 필요하면 int 타입 2개를 사용하지 말고 complex 타입을
 
 #include <iostream>
 
-
 struct Stack
 {
     int buf[10];
     int idx;
 };
 
-
 void push(Stack *s, int n)
 {
     s->buf[(s->idx)++] = n;
 }
 
-
 int pop(Stack *s)
 {
     return s->buf[--(s->idx)];
 }
-
 
 int main()
 {
@@ -80,29 +68,24 @@ int main()
     s1.idx = 0;
     s2.idx = 0;
 
-
     //3.어느 stack에 넣을지 지정해줬다.
     push(&s1, 10);
     push(&s1, 20);
     push(&s1, 30);
 
-
     push(&s2, 30);
     push(&s2, 20);
     push(&s2, 10);
-
 
     std::cout << pop(&s1) << std::endl;
     std::cout << pop(&s2) << std::endl;
 }
 //위의 코드가 C언어로 구현한 모양이다.
 
-
 /*
 push 함수의 모양
 stack타입이 없다면 : void push(int *buf,int *idx,int n)
 stack타입이 있다면 : void push(Stack * s,int n)
-
 
 문제점
 Stack의 상태를 나타내는 데이터와 Stack의 상태를 조작하는 함수가 분리되어 있다.
@@ -147,7 +130,6 @@ int main()
     s1.push(40); //객체중심
     push(&s1, 40); //함수중심
 
-
     그런데 s1.push(40)도 컴파일러가 내부적인 원리로
     push(&s1,40);으로 바꾼다.
     */
@@ -159,9 +141,7 @@ int main()
 상태를 나타내는 데이터와 상태를 조작하는 함수를 묶는다.
 C++구조체는 함수를 포함 할 수 있다.
 
-
 멤버함수에서는 멤버 데이터를 접근할 수 있다.
-
 
 push 함수의 모양
 stack타입이 없다면 : void push(int *buf,int *idx, int n)

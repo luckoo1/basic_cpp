@@ -75,7 +75,7 @@ int Car::cnt = 0;
 
 int main()
 {
-    std::cout << c1.getCount() << std::endl;
+    std::cout << Car::getCount() << std::endl;
     //그런데 자동차가 없을때 0인걸 알고 싶은데 그게 안된다..
 }
 #endif

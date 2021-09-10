@@ -144,7 +144,7 @@ int main()
     Point p3{1, 2};              //2호출
     Point p4[3];                 //1번생성자가 3회 호출
     Point p5[3] = {Point(1, 1)}; //2번 1회,1번 2회 호출
-    Point *p6;                   //생상자 호출 안됨
+    Point *p6;                   //생성자 호출 안됨
 
     p6 = static_cast<Point *>(malloc(sizeof(Point))); //생성자 호출 안됨
 

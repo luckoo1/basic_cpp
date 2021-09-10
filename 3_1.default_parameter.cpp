@@ -10,17 +10,6 @@ int main()
 }
 #endif
 
-void setAlarm(int hour, int min = 0, int sec = 0)
-{
-}
-int main()
-{
-    setAlarm(3, 4, 5);
-    setAlarm(3);
-    //나머지 값이 2개가 저절로 0이된다.
-    setAlarm(3, 2);
-    //hour는 3 min은 2가 되고 sec는 저절로 0이 된다.
-}
 #if 0
 void setAlarm(int hour, int min = 0, int sec = 0)
 {
@@ -87,7 +76,7 @@ void setAlarm(int hour, int min, int sec);
 int main()
 {
     setAlarm(3, 2);
-    //함수를 호출할떄 선언부를 보고 호출한다.
+    //함수를 호출할때 선언부를 보고 호출한다.
     //인자를 2개밖에 안줬네??
     //컴파일 에러 발생
 }

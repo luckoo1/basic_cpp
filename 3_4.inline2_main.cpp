@@ -4,7 +4,7 @@ int main()
 {
     Add1(1, 2); //OK
     Add2(1, 2); //error
-    //g++ 3_4.3_4.inline2.cpp 3_4.inline_main.cpp
+    //g++ 3_4.inline2.cpp 3_4.inline_main.cpp
     //와 같이 컴파일을 2개 했는데 동시에 하는게 아니라 따로하는 것이다.
     //main을 컴파일할때는 선언부밖에 모른다.
     //선언부만 보고 "Add2(1, 2);" 기계어 코드를 시현할 방법이 없다.

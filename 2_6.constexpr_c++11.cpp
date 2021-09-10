@@ -96,7 +96,6 @@ int main()
 
     int s1 = 3;  //OK
     int ar2[s1]; //??
-                 //
 }
 
 /*

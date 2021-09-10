@@ -8,14 +8,12 @@ private:
     int *buf;
     int idx;
 
-
 public: //2. 클래스 안에는 멤버함수의 선언만
     Stack(int sz = 10);
     ~Stack();
     void push(int n);
     int pop();
 };
-
 
 //3.멤버함수의 구현은 클래스 외부에 놓자.
 //대신 이게 멤버함수인지 일반함수인지 구별이 불가능하다.
@@ -26,25 +24,21 @@ Stack(int sz = 10)
     idx = 0;
 }
 
-
 ~Stack()
 {
     delete[] buf;
 }
-
 
 void push(int n)
 {
     buf[idx++] = n;
 }
 
-
 int pop()
 {
     return buf[--idx];
 }
 */
-
 
 //4.아래와 같이 적자.
 Stack::Stack(int sz)   //5.문법 생각하자.
@@ -53,30 +47,25 @@ Stack::Stack(int sz)   //5.문법 생각하자.
     idx = 0;
 }
 
-
 Stack::~Stack()
 {
     delete[] buf;
 }
-
 
 void Stack::push(int n)
 {
     buf[idx++] = n;
 }
 
-
 int Stack::pop()
 {
     return buf[--idx];
 }
 
-
 int main()
 {
     Stack s1(20);
     Stack s2;
-
 
     s1.push(10);
     s1.push(20);
@@ -85,7 +74,6 @@ int main()
     std::cout << s1.pop() << std::endl;
     std::cout << s2.pop() << std::endl;
 }
-
 
 /*
 정리

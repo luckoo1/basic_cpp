@@ -16,14 +16,12 @@
 #include <iostream>
 #include <cstdlib>
 
-
 int main()
 {
     int *p = static_cast<int *>(malloc(100));
     //malloc(100)이 void포인터로 리턴받아서 void포인터니깐
     //"int *"로 casting하겠다는 뜻이다.
 }
-
 
 //그럼 이러한 static_cast가 왜 나왔을까? 알아보자
 #endif
@@ -68,7 +66,6 @@ int main()
 #if 0
 //캐스팅이 위험한 경우 2
 
-
 int main()
 {
     const int c = 10;
@@ -98,7 +95,6 @@ int main()
 
 //이러한 문제점들이 C에 있었다.
 //이제 C++ casting알아보자.
-
 #endif
 
 /*
@@ -119,7 +115,6 @@ void*->다른타입*
 연관성 있는 타입 허용
 */
 #include <cstdlib>
-
 
 int main()
 {
@@ -170,7 +165,6 @@ int main()
 #endif
 
 //casting사용예제 살펴보자
-
 int main()
 {
     const int c = 10;

@@ -28,7 +28,6 @@ int main()
 }
 #endif
 
-//c에서 이렇게 사용했다
 #include <iostream>
 
 int main()
