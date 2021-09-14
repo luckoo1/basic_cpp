@@ -68,6 +68,7 @@ int main()
 }
 #endif
 
+#if 0
 #include <string>
 
 class Animal
@@ -108,5 +109,134 @@ int main()
 /*
 기반 클래스의 포인터로 파생 클래스를 가리킬 수는 있지만 파생 클래스의 고유한 멤버에 접근할 수는 없다.
 파생클래스의 고유 멤버에 접근하려면 기반클래스 포인터를 파생클래스의 포인터 타입으로 캐스팅해야한다.
+*/
 
+#endif
+
+#if 0
+class Animal
+{
+public:
+    int age;
+};
+
+class Cat : public Animal
+{
+};
+
+class Dog : public Animal
+{
+};
+
+void HappyNewYear(Dog *p)
+{
+    ++(p->age);
+}
+//2.고양이버전도 만들었다.
+//이런식이면 동물이 늘어날때마다 계속 만들어야한다
+//그런데 생각해보면 나이먹는건 모든 동물의 특징아니야?
+void HappyNewYear(Cat *p)
+{
+    ++(p->age);
+}
+
+int main()
+{
+    Dog dog;
+    HappyNewYear(&dog);
+
+    Cat cat;
+    HappyNewYear(&cat); //1.고양이도 나이먹게 하고싶다
+}
+#endif
+
+#if 0
+class Animal
+{
+public:
+    int age;
+};
+
+class Cat : public Animal
+{
+};
+
+class Dog : public Animal
+{
+};
+
+/*기반클래스의 포인터로 모든 동물을 가리킬수있다.
+p로는 파생클래스의 고유멤버에는 접근못하지만
+나이는 기반클래스 안에 있던거다
+*/
+void HappyNewYear(Animal *p)
+{
+    ++(p->age);
+}
+
+int main()
+{
+    Dog dog;
+    HappyNewYear(&dog);
+
+    Cat cat;
+    HappyNewYear(&cat);
+}
+
+/*
+동종(동일한 기반 클래스를 사용하는 클래스)을 처리하는 함수를 만들 수 있다.
+*/
+#endif
+
+#include <vector>
+
+class Animal
+{
+public:
+    int age;
+};
+
+class Cat : public Animal
+{
+};
+
+class Dog : public Animal
+{
+};
+
+int main()
+{
+    std::vector<Dog *> v1; //Dog만 보관
+    std::vector<Cat *> v2; //Cat만 보관
+
+    std::vector<Animal *> v3; //모든동물 보관
+}
+
+/*
+Composite패턴
+
+탐색기를 예로보자
+파일과 폴더 클래스가 있어야한다
+폴더안에 파일을 보관할수 있다.
+폴더안에 폴더도 보관할수 있어야한다. 
+즉,폴더는 파일뿐아니라 폴더도 보관해야한다.
+
+폴더와 파일은 공통의 기반클래스를 가지고 있어야한다.
+
+A와 B를 같이 보관하고 싶다면 공통의 기반 클래스를 만들어야한다.
+*/
+
+/*
+그림필기 35분
+파워포인트를 예로보자
+사각형과 원이 있다
+이런걸 그룹으로 묶을수 있다.
+
+Shape라는 기반클래스 사각형과 원을 파생클래스로 설계하자
+group은 Shape의 포인터를 저장하면된다.
+vector<Shape*>
+
+그런데 group과 shape도 공통의 기반클래스 component를 둘수 있다.
+component로 group과 shape를 관리할 수 있다.
+그럼 vector<Shape*> => vector<Component*>로 바꿔야한다.
 */
