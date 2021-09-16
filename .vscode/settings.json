@@ -50,6 +50,7 @@
         "vector": "cpp",
         "xhash": "cpp",
         "xtree": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "fstream": "cpp"
     }
 }
