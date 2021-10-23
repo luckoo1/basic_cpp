@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 #include <vector>
 #include <list>
@@ -41,9 +40,8 @@ int main()
 list<int>::iterator가 정확한 타입
 멤버함수 begin()을 통해서 꺼낼 수 있다.
 */
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <vector>
 #include <list>
@@ -72,9 +70,8 @@ int main()
 반복자(iterator)주의 사항
 end로 꺼내는 반복자는 마지막 요소가 아닌 마지막 다음 요소를 가리킨다.
 */
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <vector>
 #include <list>
@@ -119,9 +116,8 @@ int main()
         ++p1;
     }
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <vector>
 #include <list>
@@ -145,8 +141,7 @@ int main()
 멤버함수 begin/end사용
 일반함수 begin/end사용-C++11부터
 */
-#endif
-#if 0
+//#######################################################################
 #include <iostream>
 #include <vector>
 #include <list>
@@ -177,7 +172,7 @@ int main()
         ++p1;
     }
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 #include <vector>

@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 using namespace std;
 
@@ -20,8 +19,7 @@ int main()
     c.print(); //기존에 이렇게 출력하는걸 했는데
     cout << c; //이렇게 출력은 안될까?
 }
-#endif
-#if 0
+
 #include <iostream>
 using namespace std;
 
@@ -50,7 +48,6 @@ int main()
     전역함수로 하자!
     */
 }
-#endif
 
 #include <iostream>
 using namespace std;

@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 using namespace std;
 //endl의 정확한 원리는 함수이다
@@ -8,9 +7,8 @@ int main()
     cout << endl;
     endl(cout); //이렇게 적어도 된다.
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <cstdio>
 
 class ostream
@@ -88,8 +86,7 @@ cout<<'\n'하면되자나
 cout<<"A"<<tab<<"B"<<endl;이거 가능한가?
 tab을 쓰고싶다
 */
-#endif
-#if 0
+//#######################################################################
 #include <cstdio>
 
 class ostream
@@ -140,8 +137,7 @@ int main()
 }
 
 //이제 cout << menu도 추가해볼가
-#endif
-#if 0
+//#######################################################################
 #include <cstdio>
 
 class ostream
@@ -197,7 +193,7 @@ int main()
     cout << 'A' << tab << 'B' << endl;
     cout << menu;
 }
-#endif
+//#######################################################################
 //1.
 //일단 표준에 있는걸 주석으로 막아보자
 //우리가 만든 ostream을 주석으로 막은 것

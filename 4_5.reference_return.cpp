@@ -1,4 +1,4 @@
-#if 0
+
 #include <iostream>
 
 struct Point
@@ -14,9 +14,7 @@ int main()
 {
     goo();
 }
-#endif
-
-#if 0
+//#######################################################################
 //리턴도 마찬가지이다.
 #include <iostream>
 
@@ -42,9 +40,7 @@ int main()
     //임시객체는 왼쪽에 올 수 없다.
     std::cout << pt.x << std::endl; //error
 }
-#endif
-
-#if 0
+//#######################################################################
 #include <iostream>
 
 struct Point
@@ -54,7 +50,7 @@ struct Point
 };
 
 Point pt;
-Point& goo() { return pt; }
+Point &goo() { return pt; }
 //return 값을 참조로 만들어서 리턴해 버린다.
 //참조로 만들어서 리턴하니 복사본을 만들지 않는다.
 
@@ -66,7 +62,7 @@ int main()
     //참조리턴인경우 에러 아님
     std::cout << pt.x << std::endl; //20
 }
-#endif
+//#######################################################################
 
 /*
 정리

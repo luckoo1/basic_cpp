@@ -1,5 +1,4 @@
 //8번째 단계
-#if 0
 //아래의 stack은 int만 저장할 수 있다.
 #include <iostream>
 class Stack
@@ -36,9 +35,7 @@ int main()
     std::cout << s1.pop() << std::endl;
     std::cout << s2.pop() << std::endl;
 }
-#endif
-
-#if 0
+//#######################################################################
 //template를 사용하자
 #include <iostream>
 template <typename T>
@@ -87,7 +84,7 @@ int 버전 stack class
 따로 따로 있다.
 각 타입을 저장하는 stack 클래스를 별도로 코드를 생성하는 것
 */
-#endif
+//#######################################################################
 //선언부와 구현부 분리해보자 일단 pop함수만 해보자
 
 #include <iostream>

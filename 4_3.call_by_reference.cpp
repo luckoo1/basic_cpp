@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 
 void inc1(int n) { ++n; }
@@ -20,12 +19,13 @@ int main()
     std::cout << b << std::endl;
     std::cout << c << std::endl;
 }
-#endif
-
-#if 0
+//#######################################################################
 #include <iostream>
 
-void inc1(int n) { ++n; }
+void inc1(int n)
+{
+    ++n;
+}
 void inc2(int *p) { ++(*p); }
 void inc3(int &r) { ++r; }
 
@@ -43,12 +43,13 @@ int main()
     std::cout << b << std::endl;
     std::cout << c << std::endl;
 }
-#endif
-
-#if 0
+//#######################################################################
 #include <iostream>
 
-void inc1(int n) { ++n; }
+void inc1(int n)
+{
+    ++n;
+}
 void inc2(int *p) { ++(*p); }
 void inc3(int &r) { ++r; }
 
@@ -72,7 +73,7 @@ int main()
     std::cout << b << std::endl; //11
     std::cout << c << std::endl; //11
 }
-#endif
+//#######################################################################
 #include <iostream>
 
 int main()

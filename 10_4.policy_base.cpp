@@ -1,4 +1,4 @@
-#if 0
+
 //알고리즘의 정책변경
 #include <iostream>
 #include <vector>
@@ -72,9 +72,8 @@ int main()
 함수객체사용 <functional>
 람다 표현식 사용(C++11)
 */
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <set>
 #include <functional>
@@ -93,7 +92,7 @@ int main()
         std::cout << n << ", "; //알아서 정렬되어 있다.
     }
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 #include <set>

@@ -1,4 +1,4 @@
-#if 0
+
 #include <iostream>
 #include <cstdlib>
 
@@ -12,11 +12,9 @@ int main()
 
     int jumsu[cnt]; //g++은 가능
                     //vc++ error;
-
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <cstdlib>
 
@@ -39,7 +37,7 @@ int main()
 3.c언어에서는 malloc을 사용했다.
 4.malloc 사용시 주소를 원하는 타입으로 캐스팅 해야 한다.
 */
-#endif
+//#######################################################################
 
 #include <iostream>
 #include <cstdlib>

@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 //아래의 상황을 가정해보자
 //x 값을 foo함수로 넘기고 싶은데 절대로 x값을 바꾸면 안되는 상황이다
@@ -13,9 +12,7 @@ int main()
     foo(x);
     std::cout << x << std::endl;
 }
-#endif
-
-#if 0
+//#######################################################################
 #include <iostream>
 
 //call by value로 받으면 절대로 x는 안변한다.
@@ -30,9 +27,7 @@ int main()
     foo(x);
     std::cout << x << std::endl;
 }
-#endif
-
-#if 0
+//#######################################################################
 #include <iostream>
 
 /*그런데 아래의 경우를 살펴보자
@@ -56,9 +51,7 @@ int main()
     foo(x);
     std::cout << x << std::endl;
 }
-#endif
-
-#if 0
+//#######################################################################
 #include <iostream>
 /*
 call by reference하면
@@ -80,9 +73,7 @@ int main()
     foo(x);
     std::cout << x << std::endl;
 }
-#endif
-
-#if 0
+//#######################################################################
 #include <iostream>
 /*
 const reference를 사용했다.
@@ -103,7 +94,7 @@ int main()
     foo(x);
     std::cout << x << std::endl;
 }
-#endif
+//#######################################################################
 
 /*
 

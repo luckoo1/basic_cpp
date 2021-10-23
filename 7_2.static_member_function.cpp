@@ -1,4 +1,3 @@
-#if 0
 /*cnt를 사용자가 접근못하게 private에 두었다.
 std::cout << Car::cnt << std::endl;
 std::cout << c1.cnt << std::endl;
@@ -31,9 +30,8 @@ int main()
     std::cout << Car::cnt << std::endl;
     std::cout << c1.cnt << std::endl;
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 
 class Car
@@ -44,7 +42,7 @@ class Car
 public:
     Car() { ++cnt; }
     ~Car() { --cnt; }
-    int getCount() { return cnt; }//추가
+    int getCount() { return cnt; } //추가
 };
 
 int Car::cnt = 0;
@@ -56,8 +54,7 @@ int main()
     //위와같이 사용했다.
 }
 
-#endif
-#if 0
+//#######################################################################
 #include <iostream>
 
 class Car
@@ -78,8 +75,7 @@ int main()
     std::cout << Car::getCount() << std::endl;
     //그런데 자동차가 없을때 0인걸 알고 싶은데 그게 안된다..
 }
-#endif
-#if 0
+//#######################################################################
 
 #include <iostream>
 
@@ -110,9 +106,8 @@ static 멤버함수
 객체이름.함수이름()으로도 사용가능
 일반멤버함수 : 호출하려면 반드시 객체가 필요
 */
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 
 class Test
@@ -141,9 +136,8 @@ int main()
 {
     Test::f2();
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 
 class Test
@@ -181,7 +175,7 @@ int main()
     여기서 정의되었으니 문제없다.
     */
 }
-#endif
+//#######################################################################
 #include <iostream>
 
 class Test

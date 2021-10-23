@@ -25,7 +25,6 @@ int main()
     Camera c1;
     p.useCamera(&c1);
 }
-#endif
 
 #if 0
 //1. 새로운 카메라가 나왔다!
@@ -81,7 +80,6 @@ int main()
 교체 불가능하고 확장성이 없다.
 useCamera에서 "Camera* p"같이 직접 이름을 사용한다.
 */
-#endif
 
 #if 0
 #include <iostream>
@@ -171,7 +169,6 @@ int main()
 하나의 클래스가 다른 클래스를 사용할때 인터페이스(추상 클래스)를 사용하는것
 교체가능하고 확장성이 높다
 */
-#endif
 
 #include <iostream>
 //아래의 것이 인터페이스

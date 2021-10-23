@@ -1,4 +1,4 @@
-#if 0
+//#######################################################################
 
 void foo()
 {
@@ -17,9 +17,8 @@ int main()
     foo();         //2.Ok
     Audio::foo();  //foo를 전역변수이지 Audio안에 없으니깐 에러발생
 }
-#endif
 
-#if 0
+//#######################################################################
 void foo()
 {
 }
@@ -38,17 +37,15 @@ int main()
     foo();
     Audio::foo(); //문제없이 사용된다.
 }
-#endif
 
-#if 0
+//#######################################################################
 #include <stdio.h>
 
 int main()
 {
     printf("hello\n");
-    std::printf("hello\n");//error
+    std::printf("hello\n"); //error
 }
-#endif
 
 #include <cstdio>
 //c시절에 사용하던 std io header를 포함하겠다.

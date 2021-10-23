@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 #include <string>
 //공통적인 요소가 있어서 불편하다
@@ -20,7 +19,7 @@ class Professor
 int main()
 {
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 #include <string>

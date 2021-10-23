@@ -1,4 +1,3 @@
-#if 0
 //c방식 실패처리
 int foo()
 {
@@ -33,9 +32,7 @@ c방식 에러처리는 사용자가 반드시 확인할 필요가 없다.
 리턴값과 에러값을 구분하기 어려운 경우가 있다
 함수 사용자가 반드시 에러를 확이할 필요가 없다.
 */
-#endif
 
-#if 0
 int foo()
 {
     if (1) //항상실패하게 만들었다.
@@ -50,9 +47,7 @@ int main()
     foo(); //여기서 실패발생
 }
 //그럼 위의 예제는 무조건 실패한다
-#endif
 
-#if 0
 #include <iostream>
 
 int foo()
@@ -86,9 +81,7 @@ int main()
     뒤에 계속 이어나갈수 있는거다
     */
 }
-#endif
 
-#if 0
 #include <iostream>
 
 int foo()
@@ -135,9 +128,7 @@ catch(...)
 모든 종류의 예외를 잡을 수 있다.
 catch를 여러개 만들때는 반드시 마지막에 놓여야 한다.
 */
-#endif
 
-#if 0
 /*
 단순히 1을 던지는거보다
 MemoryException class를 만들어서
@@ -166,9 +157,7 @@ int main()
     {
     }
 }
-#endif
 
-#if 0
 #include <iostream>
 #include <exception> //추가
 
@@ -215,18 +204,14 @@ std::bad_alloc
 std::range_error
 std::out_of_range
 */
-#endif
 
-#if 0
 #include <iostream>
 
 int main()
 {
     int *p = new int[100]; //메모리할당 실패시 예외발생
 }
-#endif
 
-#if 0
 #include <iostream>
 
 int main()
@@ -240,9 +225,7 @@ int main()
         std::cout << e.what() << std::endl; //메모리할당 실패시 예외발생
     }
 }
-#endif
 
-#if 0
 #include <iostream>
 
 //1. foo함수가 실행되다가 int형태의 예외가 나올수 있다.
@@ -268,12 +251,10 @@ void foo()
 int main()
 {
 }
-#endif
 
-#if 0
 //C++11부터 예외의 종류를 알려주는건 중요하지 않은데 예외의 유무를 알려주는건 중요한거같다고 판단함
 //1.
-void foo() noexcept(false)//예외가 있다.
+void foo() noexcept(false) //예외가 있다.
 {
 }
 int main()
@@ -294,7 +275,7 @@ int main()
 {
 }
 //4.
-void foo()  //예외가 있다.
+void foo() //예외가 있다.
 {
 }
 int main()
@@ -302,7 +283,6 @@ int main()
 }
 
 //사실 1,4번만 많이 쓴다
-#endif
 
 void goo() noexcept(true) //예외가 없다
 {

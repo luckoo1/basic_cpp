@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 
 class Base
@@ -33,7 +32,7 @@ int main()
     //new Derived할때 Derived생성자 불린다.
     //delete p하려는데 P를 보고 Base의 소멸자를 호출한다.
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 

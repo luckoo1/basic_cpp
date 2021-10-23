@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 using namespace std;
 
@@ -6,7 +5,6 @@ namespace std
 {
     class ostream
     {
-
     };
     ostream cout; //2.cout이라는 객체 있는 격
 }
@@ -24,8 +22,7 @@ int main()
 
 //1.cout은 객체다.
 //  cout.찍으면 멤버함수들이 보인다.
-#endif
-#if 0
+//#######################################################################
 #include <iostream>
 using namespace std;
 
@@ -51,7 +48,7 @@ int main()
     cout << d; //cout.operator<<(d)
     //이건 double버전
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 using namespace std;

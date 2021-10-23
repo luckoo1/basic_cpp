@@ -1,5 +1,4 @@
 //Run Time Type Information
-#if 0
 #include <iostream>
 #include <typeinfo>
 
@@ -40,9 +39,8 @@ typeid
 가상함수가 없는 객체 : 컴파일 시간에 타입조사
 가상함수가 있는 객체 : 실행시간에 타입을 조사(가상함수 테이블 정보 참고)
 */
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <typeinfo>
 
@@ -71,8 +69,7 @@ int main()
     Dog d;
     foo(&d);
 }
-#endif
-#if 0
+//#######################################################################
 #include <iostream>
 #include <typeinfo>
 
@@ -117,7 +114,7 @@ int main()
     Dog d;
     foo(&d);
 }
-#endif
+//#######################################################################
 //실전에서는
 #include <iostream>
 #include <typeinfo>

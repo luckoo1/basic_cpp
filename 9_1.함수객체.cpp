@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 
 struct Plus
@@ -44,8 +43,7 @@ int main()
 특정 상황(다른 함수의 인자로 전달될 때)에서는 일반함수보다 빠르다(인라인 치환)
 상태를 가지는 함수(멤버 데이터가 있고,멤버 함수를 활용 가능)
 */
-#endif
-#if 0
+//#######################################################################
 #include <iostream>
 
 int add(int a, int b)
@@ -72,9 +70,8 @@ int main()
 
     std::cout << n << std::endl;
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 
 int add(int a, int b)
@@ -102,9 +99,8 @@ int main()
 
     std::cout << n << std::endl;
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 //아래와 같이 template를 사용하면 더 좋다
 template <typename T>
@@ -121,7 +117,7 @@ int main()
     Plus<int> p;
     int n = p(1, 2);
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 #include <functional> //C++표준에는 이미 plus함수를 가지고 있다.

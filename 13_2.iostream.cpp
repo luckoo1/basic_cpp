@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 
 int main()
@@ -14,9 +13,8 @@ int main()
 
     std::cout << n << std::endl;
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 
 int main()
@@ -43,9 +41,8 @@ int main()
 /*
 그림필기
 */
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 
 int main()
@@ -76,9 +73,8 @@ cin은 멤버데이터도 있다.
 입력을 받다가 실패하면 cin이 가지고있는 멤버데이터중에서 실패를 나타내는 멤버데이터가 있는데 이미 실패로 표시되어 있다.
 그걸 다시 reset하지 않는 이상 계속 실패로 남아있다.
 */
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 
 int main()
@@ -107,9 +103,8 @@ int main()
 std::cin.ignore();하면 디폴트로 std::cin.ignore(1);처럼 되는데
 그러면 한자리만 비운다
 */
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 
 int main()
@@ -139,9 +134,8 @@ std::istream타입의 객체(basic_istream<char>)
 "operator>>"뿐 아니라 다양한 멤버함수가 존재
 ignore,clear
 */
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <string>
 
@@ -155,7 +149,7 @@ int main()
 
     std::cout << s << std::endl; //aaa뜬다
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 #include <string>

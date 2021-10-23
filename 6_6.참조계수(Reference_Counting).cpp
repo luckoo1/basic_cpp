@@ -1,5 +1,4 @@
 //Reference Counting
-#if 0
 #include <iostream>
 #include <cstring>
 
@@ -33,7 +32,7 @@ int main()
     //만약 kim이라는 자원이 큰 자원이라면 메모리적으로 부담이 온다.
     //참조계수를 쓰자
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 #include <cstring>

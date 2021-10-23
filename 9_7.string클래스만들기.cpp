@@ -1,4 +1,3 @@
-#if 0
 int main()
 {
     char s1[10] = "hello";
@@ -6,9 +5,7 @@ int main()
     s2 = s1; //error
     //c에서는 strcpy
 }
-#endif
 
-#if 0
 #include <iostream>
 #include <string>
 
@@ -20,9 +17,7 @@ int main()
     s2 = s1; //가능
 }
 //string을 만들어보자(고급기법 제외 간단한 형태로!)
-#endif
 
-#if 0
 #include <iostream>
 
 int main()
@@ -37,9 +32,7 @@ int main()
 
     s2 = s3; //4.대입연산자
 }
-#endif
 
-#if 0
 #include <iostream>
 #include <cstring> //string.h의 C++ 버전
 //초기화부터 살펴보자
@@ -72,9 +65,7 @@ int main()
     String s1("hello")와 같다
     */
 }
-#endif
 
-#if 0
 //cout과 연동해보자(화면 출력)
 //operator<<만들기
 #include <iostream>
@@ -114,9 +105,7 @@ int main()
 
     std::cout << s1 << std::endl;
 }
-#endif
 
-#if 0
 #include <iostream>
 #include <cstring>
 //복사기능을 만들어보자
@@ -168,9 +157,7 @@ int main()
     1:00그림필기 추가
     */
 }
-#endif
 
-#if 0
 #include <iostream>
 #include <cstring>
 //대입연산자를 만들어보자
@@ -231,7 +218,6 @@ int main()
     메모리 해지가 안되는 현상이 발생한다.
     */
 }
-#endif
 
 #include <iostream>
 #include <cstring>

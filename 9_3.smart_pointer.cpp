@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 
 class Car
@@ -57,9 +56,7 @@ Car* p = new Car;처럼 쓰면
 
 SPtr p = new Car;을 쓰면 블럭벗어나면 소멸자 호출이 가능해진다.
 */
-#endif
 
-#if 0
 #include <iostream>
 
 class Car
@@ -85,7 +82,6 @@ int main()
     SPtr p = new Car;
     p->Go();
 }
-#endif
 
 #include <iostream>
 

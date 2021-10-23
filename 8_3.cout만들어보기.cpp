@@ -1,22 +1,20 @@
-#if 0
 //헤더파일 주석으로 막고 cout만들어보자
 //#include <iostream>
 //using namespace std;
 
-//ostream class만들고 
+//ostream class만들고
 class ostream
 {
 };
 
-ostream cout;//cout객체 만들었다.
+ostream cout; //cout객체 만들었다.
 
 int main()
 {
     cout << 3;
     cout << 3.4;
 }
-#endif
-#if 0
+
 #include <cstdio> //3.헤더 추가
 class ostream
 {
@@ -39,9 +37,7 @@ int main()
 /*
 모든 primitive타입에 대해서 operator<<()연산자 함수 제공
 */
-#endif
 
-#if 0
 #include <cstdio>
 class ostream
 {
@@ -68,9 +64,7 @@ int main()
     cout << 3.4;
     cout << 3 << 4; //1.cout의 장점은 연속적으로 출력하는거다.
 }
-#endif
 
-#if 0
 #include <cstdio>
 class ostream
 {
@@ -105,8 +99,7 @@ int main()
 windows : windows API사용-WriteFile()
 linux : linux system call 사용-write() 
 */
-#endif
-#if 0
+
 #include <cstdio>
 //이런 ostream이 namespace std안에있다.
 namespace std
@@ -135,7 +128,6 @@ int main()
     std::cout << 3.4;
     std::cout << 3 << 4;
 }
-#endif
 
 //1998년 표준화 이전
 class ostream

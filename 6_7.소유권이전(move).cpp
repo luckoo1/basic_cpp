@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 #include <cstring>
 
@@ -29,7 +28,7 @@ int main()
     Person p1("KIM", 2);
     Person p2 = p1;
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 #include <cstring>

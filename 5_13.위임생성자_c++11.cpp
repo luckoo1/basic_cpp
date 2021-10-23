@@ -1,4 +1,3 @@
-#if 0
 class Point
 {
     int x, y;
@@ -19,7 +18,7 @@ int main()
     Point p;
     std::cout << p.x << std::endl; //쓰레기값 나온다.
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 

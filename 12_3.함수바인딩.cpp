@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 
 class Animal
@@ -23,7 +22,7 @@ int main()
     //C++은 aniaml Jave는 Dog
     //왜그럴까????
 }
-#endif
+//#######################################################################
 
 //그림필기
 #include <iostream>

@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 #include <vector>
 
@@ -26,9 +25,8 @@ int main()
     std::vector<Rect *> v1;
     std::vector<Circle *> v2;
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <vector>
 class Shape
@@ -76,8 +74,7 @@ int main()
         }
     }
 }
-#endif
-#if 0
+//#######################################################################
 //모든 도형의 공통의 특징(Draw)는 반드시 기반 클래스(Shape)에도 있어야 한다.
 #include <iostream>
 #include <vector>
@@ -131,9 +128,8 @@ int main()
         //v자체는 shape니깐
     }
 }
-#endif
+//#######################################################################
 
-#if 0
 //기반 클래스의 함수 중 파생 클래스가 재정의하게 되는 모든 함수는 가상함수가 되어야한다.
 #include <iostream>
 #include <vector>
@@ -185,7 +181,7 @@ int main()
         }
     }
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 #include <vector>

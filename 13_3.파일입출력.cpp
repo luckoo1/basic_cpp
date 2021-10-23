@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 #include <fstream>
 
@@ -22,9 +21,8 @@ basic_ofstream => ofstream
 ifstream : 입력파일을 위한 스트림
 ofstream : 출력파일을 위한 스트림
 */
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <fstream>
 
@@ -38,9 +36,8 @@ int main()
 
     //a.txt파일이 생기고 hello가 찍혀있다.
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -58,9 +55,8 @@ int main()
 
     std::cout << s << std::endl;
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -77,9 +73,8 @@ int main()
 
     std::cout << s << std::endl;
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -107,9 +102,8 @@ int main()
     }
     //파일의 모든내용을 화면에 출력
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -136,9 +130,8 @@ int main()
         std::cout << n << std::endl;
     }
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -165,7 +158,7 @@ int main()
         std::cout << n << std::endl;
     }
 }
-#endif
+//#######################################################################
 
 #include <iostream>
 #include <fstream>

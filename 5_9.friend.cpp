@@ -1,4 +1,3 @@
-#if 0
 struct Bike
 {
 private:
@@ -21,8 +20,7 @@ void fixBike()
 int main()
 {
 }
-#endif
-
+//#######################################################################
 struct Bike
 {
 private:

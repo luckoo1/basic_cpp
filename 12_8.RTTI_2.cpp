@@ -1,4 +1,3 @@
-#if 0
 #include <iostream>
 #include <typeinfo>
 
@@ -32,9 +31,8 @@ int main()
     Dog d;
     foo(&d);
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <typeinfo>
 
@@ -71,4 +69,4 @@ int main()
     Dog d;
     foo(&d);
 }
-#endif
+//#######################################################################

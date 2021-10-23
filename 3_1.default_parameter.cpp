@@ -1,4 +1,4 @@
-#if 0
+//#######################################################################
 void setAlarm(int hour, int min, int sec)
 {
 }
@@ -8,9 +8,8 @@ int main()
     setAlarm(3, 0, 0);
     //정각에 알람주고 싶은데 0들을 쳐주기가 귀찮다
 }
-#endif
+//#######################################################################
 
-#if 0
 void setAlarm(int hour, int min = 0, int sec = 0)
 {
 }
@@ -22,9 +21,8 @@ int main()
     setAlarm(3, 2);
     //hour는 3 min은 2가 되고 sec는 저절로 0이 된다.
 }
-#endif
+//#######################################################################
 //주의해야할점 2가지가 있다.
-#if 0
 void setAlarm1(int hour, int min = 0, int sec)
 {
     //이렇게 하면 error다
@@ -39,9 +37,8 @@ int main()
 {
     setAlarm1(3, 4);
 }
-#endif
+//#######################################################################
 
-#if 0
 void setAlarm(int hour, int min = 0, int sec = 0); //선언부 선언
 
 int main()
@@ -54,9 +51,7 @@ int main()
 void setAlarm(int hour, int min = 0, int sec = 0)
 {
 }
-#endif
-
-#if 0
+//#######################################################################
 //아래와 같이 하면 문제가 없다
 //하지만 문제가 발생할 수 있다.
 void setAlarm(int hour, int min, int sec);
@@ -68,9 +63,7 @@ int main()
 void setAlarm(int hour, int min = 0, int sec = 0)
 {
 }
-#endif
-
-#if 0
+//#######################################################################
 void setAlarm(int hour, int min, int sec);
 
 int main()
@@ -84,7 +77,7 @@ int main()
 void setAlarm(int hour, int min = 0, int sec = 0)
 {
 }
-#endif
+//#######################################################################
 //default parameter는 선언부에 선언해줘야한다.
 void setAlarm(int hour, int min = 0, int sec = 0);
 

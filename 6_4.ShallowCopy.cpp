@@ -1,10 +1,9 @@
-#if 0
 #include <iostream>
 #include <cstring>
 
 class Person
 {
-    char name[8];  //이렇게 쓰면 이름의 크기가 고정되어 있어서 싫다.
+    char name[8]; //이렇게 쓰면 이름의 크기가 고정되어 있어서 싫다.
     int age;
 
 public:
@@ -20,9 +19,8 @@ int main()
 {
     Person p1("KIM", 2);
 }
-#endif
+//#######################################################################
 
-#if 0
 #include <iostream>
 #include <cstring>
 
@@ -49,7 +47,7 @@ int main()
 배열에 담을 경우 :문자열의 최대 개수가 컴파일 시간에 정해진다
 동적메모리 할당 : 실행시간에 문자열의 개수를 정할 수 있다.
 */
-#endif
+//#######################################################################
 #include <iostream>
 #include <cstring>
 
