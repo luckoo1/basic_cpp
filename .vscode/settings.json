@@ -51,6 +51,13 @@
         "xhash": "cpp",
         "xtree": "cpp",
         "typeindex": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "iterator": "cpp"
     }
 }
